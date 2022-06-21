@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --modal-duration: 1s;
+    --modal-color: #428bca;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #202736;
+    color: #fafafa;
+    font-size: 17px;
+    line-height: 1;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button {
+    background: #f300b4;
+    color: #fafafa;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+  
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #3876ac;
+  }
+  
+  .modal {
+    display: none;
+    
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  #container h2{
+    text-align: center;
+  }
+  #container{
+    margin: 20px auto;
+    padding: 20px;
+    width: 40%;
+    background-color: #f300b4;
+    border:20px double #202736;
+    
+  }
+  
+  .modal-content {
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+  
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    border-radius: 15px;
+    background-color: white;
+    align-items: center;
+    
+  }
+
+  .close{
+    color:#f300b4;
+    padding: 3px;
+    border-radius: 5px;
+    float: right;
+    font-size: 30px;
+  }
+  .close:hover,
+  .close:focus {
+    color: #202736;;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .df-input-box {
+    margin: 8px;
+    
+    
+  }
+  .text,.date,.msg {
+  border-radius: 10px;
+  border: 1px solid #dfe6e9;
+  padding: 8px;
+  cursor: pointer;
+  outline:none;
+  width: 100%;
+  height: 100%;
+}
+
+.msg{
+    resize: none;
+}
+
+label{
+    color:#202736;
+    display: block;
+}
+  
+  .btnSalvar {
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+    background-color: #202736;
+    color: #fafafa;
+    border-radius: 6px;
+    border: none;
+    margin-top: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @media(max-width: 600px) {
+  .modal-content {
+    background-color: #f300b4;
+    width: 100%;
+    position: relative;
+  }
+  #container{
+    padding: 10px;
+    width: 50%;
+    background-color: #428bca;
+  }
+}
