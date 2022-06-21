@@ -129,6 +129,7 @@ label{
     cursor: pointer;
   }
 
+
   @media(max-width: 750px) {
   .modal-content {
     background-color: #f300b4;
