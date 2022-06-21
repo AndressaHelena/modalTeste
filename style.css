@@ -128,13 +128,11 @@ label{
     text-decoration: none;
     cursor: pointer;
   }
-<<<<<<< HEAD
+
 
 
   @media(max-width: 750px) {
-=======
-@media(max-width: 600px) {
->>>>>>> a4de1637c821877a1e8507ec3d580582eadde883
+      
   .modal-content {
     background-color: #f300b4;
     width: 100%;
@@ -142,15 +140,7 @@ label{
   }
   #container{
     padding: 10px;
-<<<<<<< HEAD
     width: 90%;
     background-color: #428bca;
   }
 }
-=======
-    width: 50%;
-    background-color: #428bca;
-  }
-}
-  
->>>>>>> a4de1637c821877a1e8507ec3d580582eadde883
