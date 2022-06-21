@@ -144,7 +144,6 @@ input{
   
 
   @media(max-width: 750px) {
-
   .modal-content {
     
     width: 100%;
@@ -156,4 +155,3 @@ input{
     
   }
 }
-
