@@ -54,7 +54,7 @@
   }
   #container{
     margin: 20px auto;
-    padding: 20px;
+    padding: 15px;
     width: 40%;
     background-color: #f300b4;
     border:20px double #202736;
@@ -129,7 +129,7 @@ label{
     cursor: pointer;
   }
 
-  @media(max-width: 600px) {
+  @media(max-width: 750px) {
   .modal-content {
     background-color: #f300b4;
     width: 100%;
@@ -137,7 +137,7 @@ label{
   }
   #container{
     padding: 10px;
-    width: 50%;
+    width: 90%;
     background-color: #428bca;
   }
 }
