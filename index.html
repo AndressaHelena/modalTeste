@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modal</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-	    <button id="modal-btn">Nova Tarefa</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modal</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <button id="modal-btn">Nova Tarefa</button>
+        <div id="abrirModal" class="modal">
 
-                        <div id="abrirModal" class="modal">
-
-                       <div id="container">
-                        <h2>teste</h2>
-
-                        <form action="#" class="modal-content">
-                            <span class="close">&times;</span>
-                            <div class="df-input-box">
-                                <label for="text">Tarefa</label>
-                                <input type="text" name="text" class="text" placeholder="Digite sua tarefa" required> 
-                            </div>
-                            <div class="df-input-box">
-                                <label for="data">Data</label>
-                                <input type="date" name="date" class="date" placeholder="" required>
-                            </div>
-    
-                            <div class="df-input-box">
-                                <label for="msg">Descrição</label>
-                                <textarea rows="4" cols="20" name="msg" class="msg" placeholder= "mensagem" required></textarea>
-                            </div>
-                        </form>
-
-                        <input class="btnSalvar" type="submit" value="Salvar" />
+            <div id="container">
+                <h2>Adicionar tarefa</h2>
+                <form action="#" class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="df-input-box">
+                        <label for="text">Tarefa</label>
+                        <input type="text" name="text" class="text" placeholder="Digite sua tarefa" required> 
                     </div>
-                      </div>
-               
-            <script src="main.js"></script>
-    
-        </div>
-    </div>
+                    <div class="df-input-box">
+                        <label for="data">Data</label>
+                        <input type="date" name="date" class="date" placeholder="" required>
+                    </div>
+                
+                    <div class="df-input-box">
+                        <label for="msg">Descrição</label>
+                        <textarea rows="4" cols="20" name="msg" class="msg" placeholder= "mensagem" required></textarea>
+                    </div>
+                </form>
 
-</body>
+                <input class="btnSalvar" type="submit" value="Salvar" />
+            </div>
+        </div>
+                
+        <script src="main.js"></script>
+        
+    </body>
 </html>
