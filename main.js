@@ -7,6 +7,9 @@ modalBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
 
+modalBtn.addEventListener("click", () => {
+  abrirModal.classList.togle(modal);
+})
 
 function openModal() {
   modal.style.display = 'block';

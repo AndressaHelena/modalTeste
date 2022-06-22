@@ -14,7 +14,7 @@
   }
   
   body {
-    background: #202736;
+    background: var(--modal-color-primary);
     color: #fafafa;
     font-size: 20px;
     line-height: 1;
@@ -36,7 +36,7 @@
   }
   
   .modal {
-   
+    
     display: none;
     z-index: 1;
     left: 0;
@@ -44,6 +44,8 @@
     height: 100%;
     width: 100%;
     overflow: auto;
+    opacity: 0;
+    transform: translateY(-25px);
   }
 
   #container h2{
@@ -57,8 +59,25 @@
     width: 40%;
     margin: 20px auto;
     padding: 15px;
-    border:20px double #202736; 
+    border:1px solid #202736; 
+    border-radius: 15px;
+    
+    
   }
+  #abrirModal.modal{
+    animation-name: suavizar;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes suavizar {
+   
+  to{
+    transform: translateY(0);
+    opacity: 1;
+   }
+  }
+  
   
   .modal-content {
     background-color: var(--modal-color-primary);
@@ -68,6 +87,7 @@
     padding: 10px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
     border-radius: 15px;
+    
   }
 
   .close{
